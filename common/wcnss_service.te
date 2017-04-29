@@ -35,6 +35,8 @@ allow wcnss_service storage_file:dir search;
 allow wcnss_service self:capability setgid;
 allow wcnss_service self:capability setuid;
 
+
+
 # allow access to netd
 unix_socket_connect(wcnss_service, netd, netd)
 
