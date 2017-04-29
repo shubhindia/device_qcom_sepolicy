@@ -33,9 +33,12 @@ allow wcnss_service firmware_file:file r_file_perms;
 allow wcnss_service sysfs:file w_file_perms;
 allow wcnss_service storage_file:dir search;
 allow wcnss_service self:capability setgid;
+<<<<<<< HEAD
 allow wcnss_service self:capability setuid;
 
 
+=======
+>>>>>>> 2c05027... wcnss_service: give it a chance
 
 # allow access to netd
 unix_socket_connect(wcnss_service, netd, netd)
