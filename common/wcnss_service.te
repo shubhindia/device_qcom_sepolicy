@@ -34,11 +34,15 @@ allow wcnss_service sysfs:file w_file_perms;
 allow wcnss_service storage_file:dir search;
 allow wcnss_service self:capability setgid;
 <<<<<<< HEAD
+<<<<<<< HEAD
 allow wcnss_service self:capability setuid;
 
 
 =======
 >>>>>>> 2c05027... wcnss_service: give it a chance
+=======
+allow wcnss_service self:capability setuid;
+>>>>>>> 46b4bff... wcnss_service: also grant setuid capability
 
 # allow access to netd
 unix_socket_connect(wcnss_service, netd, netd)
